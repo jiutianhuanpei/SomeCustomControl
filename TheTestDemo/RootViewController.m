@@ -33,6 +33,7 @@
 - (void)addCustomButton {
     _button = [[CustomBtn alloc] initWithFrame:CGRectMake(100, 100, 60, 60)];
     _button.title = @"如果";
+    _button.image = [UIImage imageNamed:@"account-circle-active"];
     [_button addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_button];
 }

@@ -31,8 +31,7 @@
     CGRect titleRect = [_title boundingRectWithSize:CGSizeMake(0, rect.size.height / 4) options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:12]} context:nil];
     CGRect tRect = CGRectMake(rect.size.width / 2 - titleRect.size.width / 2, rect.size.height / 2, titleRect.size.width, rect.size.height / 4);
     
-    
-    
+//    [_image drawAsPatternInRect:CGRectMake(20, 20, 15, 15)];
     
     if (_isSelected) {
         [[UIColor colorWithWhite:0.820 alpha:1.000] set];
@@ -48,6 +47,8 @@
         [_title drawInRect:tRect withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12.f],NSForegroundColorAttributeName:[UIColor whiteColor]}];
         self.layer.borderWidth = 0;
     }
+    
+    [_image drawInRect:CGRectMake(20, 20, 15, 15)];
 }
 
 - (void)tap:(UITapGestureRecognizer*)tap{
