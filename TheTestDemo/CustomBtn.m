@@ -29,7 +29,7 @@
     UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:rect.size.width/2];
     
     CGRect titleRect = [_title boundingRectWithSize:CGSizeMake(0, rect.size.height / 4) options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:12]} context:nil];
-    CGRect tRect = CGRectMake(rect.size.width / 2 - titleRect.size.width / 2, rect.size.height / 2, titleRect.size.width, rect.size.height / 4);
+    CGRect tRect = CGRectMake(rect.size.width / 2 - titleRect.size.width / 2, rect.size.height / 2, titleRect.size.width, titleRect.size.height);
     
 //    [_image drawAsPatternInRect:CGRectMake(20, 20, 15, 15)];
     
@@ -48,7 +48,7 @@
         self.layer.borderWidth = 0;
     }
     
-    [_image drawInRect:CGRectMake(20, 20, 15, 15)];
+    [_image drawInRect:CGRectMake(rect.size.width / 2 - 7.5, rect.size.height / 2 - 20, 15, 15)];
 }
 
 - (void)tap:(UITapGestureRecognizer*)tap{
