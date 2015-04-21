@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0A581F1AE4D5C0003063F5 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A581E1AE4D5C0003063F5 /* TableViewController.m */; };
+		4D0A58221AE4D688003063F5 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A58211AE4D688003063F5 /* CustomTableViewCell.m */; };
+		4D0A58241AE4D893003063F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A58231AE4D893003063F5 /* Images.xcassets */; };
+		4D0A58271AE4DA7B003063F5 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A58261AE4DA7B003063F5 /* CustomView.m */; };
 		4D7599B41AE0A551003623D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7599B31AE0A551003623D8 /* main.m */; };
 		4D7599B71AE0A551003623D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7599B61AE0A551003623D8 /* AppDelegate.m */; };
-		4D7599B91AE0A551003623D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7599B81AE0A551003623D8 /* Images.xcassets */; };
 		4D7599BC1AE0A551003623D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D7599BA1AE0A551003623D8 /* LaunchScreen.xib */; };
 		4D7599C81AE0A551003623D8 /* TheTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7599C71AE0A551003623D8 /* TheTestDemoTests.m */; };
 		4D7599D31AE0A563003623D8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7599D21AE0A563003623D8 /* RootViewController.m */; };
@@ -27,12 +30,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D0A581D1AE4D5C0003063F5 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		4D0A581E1AE4D5C0003063F5 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		4D0A58201AE4D688003063F5 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		4D0A58211AE4D688003063F5 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		4D0A58231AE4D893003063F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4D0A58251AE4DA7B003063F5 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		4D0A58261AE4DA7B003063F5 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		4D7599AE1AE0A551003623D8 /* TheTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7599B21AE0A551003623D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D7599B31AE0A551003623D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4D7599B51AE0A551003623D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4D7599B61AE0A551003623D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4D7599B81AE0A551003623D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4D7599BB1AE0A551003623D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4D7599C11AE0A551003623D8 /* TheTestDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheTestDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7599C61AE0A551003623D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,13 +91,19 @@
 		4D7599B01AE0A551003623D8 /* TheTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4D0A58231AE4D893003063F5 /* Images.xcassets */,
 				4D7599B51AE0A551003623D8 /* AppDelegate.h */,
 				4D7599B61AE0A551003623D8 /* AppDelegate.m */,
 				4D7599D11AE0A563003623D8 /* RootViewController.h */,
 				4D7599D21AE0A563003623D8 /* RootViewController.m */,
+				4D0A581D1AE4D5C0003063F5 /* TableViewController.h */,
+				4D0A581E1AE4D5C0003063F5 /* TableViewController.m */,
+				4D0A58201AE4D688003063F5 /* CustomTableViewCell.h */,
+				4D0A58211AE4D688003063F5 /* CustomTableViewCell.m */,
+				4D0A58251AE4DA7B003063F5 /* CustomView.h */,
+				4D0A58261AE4DA7B003063F5 /* CustomView.m */,
 				4D8A38F61AE0A8FD00453F84 /* CustomBtn.h */,
 				4D8A38F71AE0A8FD00453F84 /* CustomBtn.m */,
-				4D7599B81AE0A551003623D8 /* Images.xcassets */,
 				4D7599BA1AE0A551003623D8 /* LaunchScreen.xib */,
 				4D7599B11AE0A551003623D8 /* Supporting Files */,
 			);
@@ -202,7 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D7599BC1AE0A551003623D8 /* LaunchScreen.xib in Resources */,
-				4D7599B91AE0A551003623D8 /* Images.xcassets in Resources */,
+				4D0A58241AE4D893003063F5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +237,10 @@
 			files = (
 				4D7599B71AE0A551003623D8 /* AppDelegate.m in Sources */,
 				4D8A38F81AE0A8FD00453F84 /* CustomBtn.m in Sources */,
+				4D0A58221AE4D688003063F5 /* CustomTableViewCell.m in Sources */,
 				4D7599B41AE0A551003623D8 /* main.m in Sources */,
+				4D0A58271AE4DA7B003063F5 /* CustomView.m in Sources */,
+				4D0A581F1AE4D5C0003063F5 /* TableViewController.m in Sources */,
 				4D7599D31AE0A563003623D8 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
