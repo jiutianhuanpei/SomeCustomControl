@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "RootViewController.h"
 #import "TableViewController.h"
+#import "DrawViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,8 +23,9 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    self.window.rootViewController = [RootViewController new];
-    self.window.rootViewController = [TableViewController new];
+    self.window.rootViewController = [DrawViewController new];
+//    self.window.rootViewController = [RootViewController new];
+//    self.window.rootViewController = [TableViewController new];
     return YES;
 }
 
