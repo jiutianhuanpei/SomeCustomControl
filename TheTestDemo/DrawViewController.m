@@ -10,6 +10,8 @@
 #import "CNLineChartView.h"
 #import "CNChartModel.h"
 
+#import "PieChartView.h"
+
 @interface DrawViewController ()
 
 @end
@@ -25,21 +27,39 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:0];
-    for (int i = 0; i < 10; i++) {
-        CGFloat x = arc4random() % 320;
-        CGFloat y = arc4random() % 640;
-        CGPoint point = CGPointMake(x, y);
-        NSValue *value = [NSValue valueWithCGPoint:point];
-        [array addObject:value];
-    }
-//    CGPoint *point = (__bridge CGPoint *)(array[0]);
+
+    [self drawPieView];
+
     
-    for (NSValue *value in array) {
-        CGPoint point = CGPointMake(0, 0);
-        [value getValue:&point];
-        NSLog(@"%@", NSStringFromCGPoint(point));
-    }
+
+    
+    
+}
+
+- (void)drawPieView {
+    
+    PieChartView *pieView = [[PieChartView alloc] initWithFrame:self.view.bounds];
+    pieView.center = self.view.center;
+    
+    pieView.values = @[@"15", @"20", @"10", @"30", @"25"];
+    
+    [self.view addSubview:pieView];
+}
+
+- (void)drawLineView {
+//    NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:0];
+//    for (int i = 0; i < 10; i++) {
+//        CGFloat x = arc4random() % 320;
+//        CGFloat y = arc4random() % 640;
+//        CGPoint point = CGPointMake(x, y);
+//        NSValue *value = [NSValue valueWithCGPoint:point];
+//        [array addObject:value];
+//    }
+//    for (NSValue *value in array) {
+//        CGPoint point = CGPointMake(0, 0);
+//        [value getValue:&point];
+//        NSLog(@"%@", NSStringFromCGPoint(point));
+//    }
     
     NSArray *array1 = @[@1, @3, @4, @5, @6];
     NSArray *array2 = @[@9, @6, @6, @0, @9];
@@ -56,26 +76,7 @@
     drawView.charts = @[model1, model2];
     
     [self.view addSubview:drawView];
-    
-    
-//    CNLineChartView   *lineChart = [[CNLineChartView alloc] initWithFrame:CGRectMake(0, 0, 280, 160)];
-//    lineChart.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
-//    lineChart.backgroundColor = [UIColor whiteColor];
-//    lineChart.xlabels = @[@"三月份",@"四月份",@"五月份",@"六月份",@"现在"];
-//    lineChart.ylabels = @[@4,@8,@12,@16];
-//    
-//    CNChartModel *model0 = [[CNChartModel alloc] initWithTitle:@"本赛季" numbers:@[@11,@22,@19,@4,@20] color:[UIColor redColor]];
-//    model0.width = @1;
-//    CNChartModel *model1 = [[CNChartModel alloc] initWithTitle:@"本赛季" numbers:@[@11,@3,@14,@4,@7] color:[UIColor greenColor]];
-//    model1.width = @2;
-//    lineChart.charts = @[model0,model1];
-//    
-//    [self.view addSubview:lineChart];
-    
-    
 }
-
-
 
 
 
