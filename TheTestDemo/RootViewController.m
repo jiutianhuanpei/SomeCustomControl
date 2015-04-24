@@ -10,7 +10,7 @@
 #import "CustomBtn.h"
 #import "SHBPageControl.h"
 #import "TableViewCell.h"
-
+#import "ToolbarViewController.h"
 
 @interface RootViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -31,7 +31,7 @@
     // Do any additional setup after loading the view.
     
     // 添加自定义的 Button
-//    [self addCustomButton];
+    [self addCustomButton];
     
     // 自定义 pageControl
 //    [self customPageControl];
@@ -39,7 +39,10 @@
     
     
     // 添加 tableView
-    [self creatTableView];
+//    [self creatTableView];
+    
+    // 添加 toolbarVC
+    
     
 }
 
@@ -91,6 +94,11 @@
     [self.view  addSubview:btn];
 }
 
+- (void)pushToToolbarViewController:(id)sender {
+    ToolbarViewController *toolbarVC = [[ToolbarViewController alloc] init];
+    [self.navigationController pushViewController:toolbarVC animated:YES];
+}
+
 - (void)clickBtn {
     
     if (arc4random() % 2) {
@@ -113,7 +121,8 @@
     
     _button.title = @"如果";
     _button.image = [UIImage imageNamed:@"account-circle-active"];
-    [_button addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+//    [_button addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+    [_button addTarget:self action:@selector(pushToToolbarViewController:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_button];
 }
 

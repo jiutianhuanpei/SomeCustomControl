@@ -19,6 +19,7 @@
 		4D7599D31AE0A563003623D8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7599D21AE0A563003623D8 /* RootViewController.m */; };
 		4D7AB3601AE795A40000BD83 /* SHBPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7AB35F1AE795A40000BD83 /* SHBPageControl.m */; };
 		4D8A38F81AE0A8FD00453F84 /* CustomBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A38F71AE0A8FD00453F84 /* CustomBtn.m */; };
+		4DDF05F21AE8F38C0090C3C7 /* ToolbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDF05F11AE8F38C0090C3C7 /* ToolbarViewController.m */; };
 		4DFA1AAE1AE8DADD000C067F /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFA1AAD1AE8DADD000C067F /* DrawViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,8 @@
 		4D7AB35F1AE795A40000BD83 /* SHBPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBPageControl.m; sourceTree = "<group>"; };
 		4D8A38F61AE0A8FD00453F84 /* CustomBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBtn.h; sourceTree = "<group>"; };
 		4D8A38F71AE0A8FD00453F84 /* CustomBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBtn.m; sourceTree = "<group>"; };
+		4DDF05F01AE8F38C0090C3C7 /* ToolbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolbarViewController.h; sourceTree = "<group>"; };
+		4DDF05F11AE8F38C0090C3C7 /* ToolbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolbarViewController.m; sourceTree = "<group>"; };
 		4DFA1AAC1AE8DADD000C067F /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
 		4DFA1AAD1AE8DADD000C067F /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +127,8 @@
 				4DFA1AAD1AE8DADD000C067F /* DrawViewController.m */,
 				4D7599D11AE0A563003623D8 /* RootViewController.h */,
 				4D7599D21AE0A563003623D8 /* RootViewController.m */,
+				4DDF05F01AE8F38C0090C3C7 /* ToolbarViewController.h */,
+				4DDF05F11AE8F38C0090C3C7 /* ToolbarViewController.m */,
 				4D7436031AE8919200B91630 /* TableViewCell.h */,
 				4D7436041AE8919200B91630 /* TableViewCell.m */,
 				4D7436021AE88FE300B91630 /* New Group */,
@@ -262,6 +267,7 @@
 				4D8A38F81AE0A8FD00453F84 /* CustomBtn.m in Sources */,
 				4D0A58221AE4D688003063F5 /* CustomTableViewCell.m in Sources */,
 				4D7599B41AE0A551003623D8 /* main.m in Sources */,
+				4DDF05F21AE8F38C0090C3C7 /* ToolbarViewController.m in Sources */,
 				4D7436051AE8919200B91630 /* TableViewCell.m in Sources */,
 				4D0A58271AE4DA7B003063F5 /* CustomView.m in Sources */,
 				4DFA1AAE1AE8DADD000C067F /* DrawViewController.m in Sources */,
