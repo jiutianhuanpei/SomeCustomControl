@@ -12,6 +12,8 @@
 
 #import "PieChartView.h"
 
+#import "HistogramView.h"
+
 @interface DrawViewController ()
 
 @end
@@ -28,11 +30,37 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
 
-    [self drawPieView];
+//    [self drawPieView];
 
-    
+//    [self drawHistogramView];
 
+    [self creatTextField];
     
+}
+
+- (void)creatTextField {
+    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 200, 40)];
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    textField.center = CGPointMake(CGRectGetWidth(self.view.frame) / 2., 100);
+    [self.view addSubview:textField];
+    
+    UIView *inputView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 50)];
+    inputView.backgroundColor = [UIColor grayColor];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
+    label.text = @"111111";
+    label.center = inputView.center;
+    [inputView addSubview:label];
+    
+//    textField.inputView = inputView;
+    textField.inputAccessoryView = inputView;
+    
+}
+
+
+- (void)drawHistogramView {
+    HistogramView *histogramView = [[HistogramView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 200)];
+    histogramView.center = self.view.center;
+    [self.view addSubview:histogramView];
     
 }
 

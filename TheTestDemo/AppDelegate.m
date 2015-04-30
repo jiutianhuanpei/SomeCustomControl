@@ -11,6 +11,10 @@
 #import "TableViewController.h"
 #import "DrawViewController.h"
 
+#import "CollViewController.h"
+
+#import "SearchViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -24,7 +28,10 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = [[DrawViewController alloc] init];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[SearchViewController new]                    ];
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[CollViewController new]                    ];
+    
+//    self.window.rootViewController = [[DrawViewController alloc] init];
     
 //    self.window.rootViewController = [RootViewController new];
 //    self.window.rootViewController = [TableViewController new];
